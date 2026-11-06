@@ -41,7 +41,11 @@ public class ConfigReader {
 	}
 	
 	public static String getBaseURL() {
-		return get("baseURL");
+		try{
+			return get("BaseURL");
+		}catch(Exception e){
+			throw new RuntimeException("BaseURL not found in config.properties");
+		}
 	}
 	
 	public static String getBrowser() {

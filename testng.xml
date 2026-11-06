@@ -1,0 +1,7 @@
+<suite name="Odoo Test Suite">
+    <test name="Login Test">
+        <classes>
+            <class name="com.qa.runners.LoginPageRunner"/>
+        </classes>
+    </test>
+</suite>

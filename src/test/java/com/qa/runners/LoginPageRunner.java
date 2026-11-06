@@ -5,7 +5,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
 		features = "src/test/resources/features/Login.feature",
-		glue = {"com.qa.stepdefn"},
+		glue = {"com.qa"},
 		plugin = {
 				"pretty",
 				"html:target/cucumber-reports/report.html"
